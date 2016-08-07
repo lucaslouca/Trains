@@ -89,7 +89,16 @@ $ java -jar Trains.jar path/to/graph.txt path/to/commands.txt
 **Example**
 ```shell
 MacBook-Pro:Trains lucas$ java -jar build/libs/Trains.jar ../../graph.txt ../../commands.txt 
-9;5;13;22;2;3;9;9;7;7
+9
+5
+13
+22
+2
+3
+9
+9
+7
+7
 ```
 
 ## Import Project with an IDE
