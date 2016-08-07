@@ -76,3 +76,16 @@ Run the program as follows:
 ```shell
 $ java -jar Trains.jar path/to/graph.txt path/to/commands.txt
 ```
+
+## Import Project with Eclipse
+To import the project using Eclipse, do the following:
+* **File** -> **Import...** -> **Gradle** -> **Gradle Project**
+* Click **Next**
+* Click **Browse...** for the **Root Directory**
+* Select and open **spring-app**
+* Click **Build Model**
+* Select all projects
+* Click **Finish**
+
+Notes: 
+* You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
