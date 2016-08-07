@@ -62,6 +62,13 @@ Output #10: 7
 
 ## Implementation
 
+## Run JUnit Tests
+To run the existing JUnit tests using Gradle, execute the following commands
+```shell
+$ cd path/to/Trains
+$ gradle test
+```
+
 ## Build
 The project is a Gradle project. To build, open up your Terminal and fire up the following commands:
 ```shell
@@ -95,9 +102,3 @@ To import the project using Eclipse, do the following:
 * Click `Finish`.
 
 Notes: You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
-
-## Run JUnit Tests
-To run the existing JUnit tests using Gradle, execute the following command
-```shell
-$ gradle test
-```
