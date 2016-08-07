@@ -69,6 +69,10 @@ $ cd path/to/project
 $ gradle build
 ```
 
-You should see a 'BUILD SUCCESSFUL' message when everything went well.
+You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the `.jar` will be under *path/to/project/build/libs/Trains.jar*
 
-## Running the tests
+## Usage
+Run the program as follows:
+```shell
+$ java -jar Trains.jar path/to/graph.txt path/to/commands.txt
+```
