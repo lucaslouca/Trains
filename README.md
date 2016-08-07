@@ -16,7 +16,7 @@ The purpose of this problem is to help the railroad provide its customers with i
 *  Compute the number of different routes between two towns.
 *  Compute the shortest route between two towns.
 
-## Example
+## Example Input & Output
 Below follows an example with input data, actions performed and expected output result.
 
 **Sample Input:**
