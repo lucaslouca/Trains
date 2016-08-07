@@ -9,13 +9,12 @@ The purpose of this problem is to help the railroad provide its customers with i
 **Input**  
 > A directed graph where a node represents a town and an edge represents a route between two towns.  The weighting of the edge represents the distance between the two towns.  A given route will never appear more than once, and for a given route, the starting and ending town will not be the same town. 
 
-**Input Format**
 > The towns are named using the first few letters of the alphabet from `A` to `E`.  A route between two towns (`A` to `B`) with a distance of `5` is represented as `AB5`. A directed graph is represented by a list of routes, with each route as a separate line.
 
 **Available Actions**
 *  Compute the distance along a certain route. If no such route exists, output 'NO SUCH ROUTE'. Otherwise, follow the route as given; do not make any extra stops!
-*  Compute the number of different routes between two towns
-*  Compute the shortest route between two towns
+*  Compute the number of different routes between two towns.
+*  Compute the shortest route between two towns.
 
 ## Example
 Below follows an example with input data, actions performed and expected output result.
