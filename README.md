@@ -76,8 +76,16 @@ Run the program as follows:
 ```shell
 $ java -jar Trains.jar path/to/graph.txt path/to/commands.txt
 ```
+## Import Project with an IDE
+### Import Project with IntelliJ IDEA
+To import the project using Eclipse, do the following:
+* `File -> Import Project`.
+* Browse to the project directory and click `OK`.
+* Select `Gradle` as build tool and click `Next`.
+* Specify `Gradle home` and make sure the `Gradle JVM` is set to version `1.8.x`.
+* Click `Finish`.
 
-## Import Project with Eclipse
+### Import Project with Eclipse
 To import the project using Eclipse, do the following:
 * **File** -> **Import...** -> **Gradle** -> **Gradle Project**
 * Click **Next**
