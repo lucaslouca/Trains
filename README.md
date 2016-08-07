@@ -69,7 +69,7 @@ $ cd path/to/Trains
 $ gradle build
 ```
 
-You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the `Trains.jar` will be under `/build/libs/` in the `Trains` project directory.
+You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the program will be named `Trains.jar` and can be found under `/build/libs/` in the `Trains` project directory.
 
 ## Usage
 Run the program as follows:
