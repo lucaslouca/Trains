@@ -62,6 +62,13 @@ Output #10: 7
 
 ## Implementation
 
-## Usage
+## Build
+The project is a Gradle project.
+```shell
+$ cd path/to/project
+$ gradle build
+```
+
+You should see a 'BUILD SUCCESSFUL' message when everything went well.
 
 ## Running the tests
