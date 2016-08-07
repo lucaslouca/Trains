@@ -87,5 +87,4 @@ To import the project using Eclipse, do the following:
 * Select all projects
 * Click **Finish**
 
-Notes: 
-* You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
+Notes: You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
