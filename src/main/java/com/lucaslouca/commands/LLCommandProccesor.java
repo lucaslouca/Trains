@@ -67,7 +67,7 @@ public class LLCommandProccesor {
             for (int i = 0; i < commands.size(); i++) {
                 LLCommand command = commands.get(i);
                 sb.append(command.execute());
-                sb.append(";");
+                sb.append("\n");
             }
 
             LLCommand command = commands.get(commands.size() - 1);

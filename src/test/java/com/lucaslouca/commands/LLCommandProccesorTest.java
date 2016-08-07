@@ -44,7 +44,7 @@ public class LLCommandProccesorTest {
     @Test
     public void testRunAll() {
         String ans = processor.runAll();
-        assertEquals("9;5;13;22;2;3;9;9;7;7", ans);
+        assertEquals("9\n5\n13\n22\n2\n3\n9\n9\n7\n7", ans);
     }
 
     @Test

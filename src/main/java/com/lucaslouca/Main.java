@@ -16,26 +16,26 @@ public class Main {
         if (args.length != 2) {
             System.err.println(LLPropertyFactory.getProperties().get("usage"));
             System.exit(1);
-        }
+        } else {
+            String graphFilePath = args[0];
+            String commandsFilePath = args[1];
 
-        String graphFilePath    = args[0];
-        String commandsFilePath = args[1];
+            LLTownMap map = new LLTownMapImpl();
+            try {
+                map.init(graphFilePath);
 
-        LLTownMap map = new LLTownMapImpl();
-        try {
-            map.init(graphFilePath);
+                LLRailRoadService service = new LLRailRoadServiceImpl(map);
 
-            LLRailRoadService service = new LLRailRoadServiceImpl(map);
+                // Create an LLCommandFactory
+                LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 
-            // Create an LLCommandFactory
-            LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
+                // Create an LLCommandProccesor that uses commandFactory
+                LLCommandProccesor processor = new LLCommandProccesor(commandsFilePath, commandFactory);
 
-            // Create an LLCommandProccesor that uses commandFactory
-            LLCommandProccesor processor = new LLCommandProccesor(commandsFilePath, commandFactory);
-
-            System.out.println(processor.runAll());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+                System.out.println(processor.runAll());
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

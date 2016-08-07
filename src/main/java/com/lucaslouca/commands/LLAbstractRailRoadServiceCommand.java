@@ -3,7 +3,7 @@ package com.lucaslouca.commands;
 import com.lucaslouca.service.LLRailRoadService;
 
 /**
- * {@code abstract} class defining an {@code LLCommand} related to the {@code LLRailRoadService} functionality.
+ * {@code Abstract} class defining an {@code LLCommand} related to the {@code LLRailRoadService} functionality.
  */
 public abstract class LLAbstractRailRoadServiceCommand implements LLCommand  {
     private LLRailRoadService receiver;
