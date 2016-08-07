@@ -65,11 +65,11 @@ Output #10: 7
 ## Build
 The project is a Gradle project.
 ```shell
-$ cd path/to/project
+$ cd path/to/Trains
 $ gradle build
 ```
 
-You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the `.jar` will be under *path/to/project/build/libs/Trains.jar*
+You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the `Trains.jar` will be under `/build/libs/` in the `Trains` project directory.
 
 ## Usage
 Run the program as follows:
