@@ -63,7 +63,7 @@ Output #10: 7
 ## Implementation
 
 ## Build
-The project is a Gradle project.
+The project is a Gradle project. To build open up your Terminal and fire up the following commands:
 ```shell
 $ cd path/to/Trains
 $ gradle build
