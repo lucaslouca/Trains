@@ -1,0 +1,9 @@
+distance;A;B;C
+distance;A;D
+distance;A;D;C
+distance;A;E;B;C;D
+count_routes_with_max_hops;C;C;3
+count_routes_with_hops;A;C;4
+length_of_shortest_path;A;C
+length_of_shortest_path;B;B
+count_routes_with_max_distance;C;C;29
