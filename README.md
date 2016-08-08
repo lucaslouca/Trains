@@ -154,7 +154,23 @@ Interface defining a command that can be executed by calling its `execute()` met
 Interface that defines which functionality an `LLCommand` factory must provide.`LLCommandFactory` provides functionality for creating new commands that implement the `LLCommand` interface.
 
 ### `LLRailRoadServiceCommandFactory`
-This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. `LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`.
+This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. The `LLRailRoadServiceCommandFactory` gets initialised with an  `LLRailRoadService`, which it sets a *receiver* in the `LLAbstractRailRoadServiceCommand` commands:
+```java
+LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
+```
+`LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`. 
 
 ### `LLCommandProccesor`
-Class that executes `LLCommand` commands.
+`LLCommandProccesor` executes `LLCommand` commands. The `LLCommandProccesor` gets initialised with an `LLCommandFactory`.
+```java
+LLCommandProccesor processor = new LLCommandProccesor(commandFactory);
+```
+The `LLCommandFactory` will then be used by `LLCommandProccesor` to create `LLCommand` objects for a given input. `LLCommandProccesor` can take a single command in the form of
+```java
+String result = processor.run("distance;A;D"); // compute distance between node 'A' and 'B'
+```
+or run all commands contained in a text file:
+```java
+String result = processor.runAll("/Users/lucas/commands.txt"); // execute all command in commands.txt
+```
+
