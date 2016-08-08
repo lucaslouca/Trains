@@ -158,7 +158,7 @@ This class implements the `LLCommandFactory` interface. It provides methods for 
 ```java
 LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 ```
-`LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`. 
+Classes inheriting from `LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`. 
 
 ### `LLCommandProccesor`
 `LLCommandProccesor` executes `LLCommand` commands. The `LLCommandProccesor` gets initialised with an `LLCommandFactory`.
