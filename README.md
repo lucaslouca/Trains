@@ -71,6 +71,7 @@ To run the existing JUnit tests using Gradle, execute the following commands
 $ cd path/to/Trains
 $ gradle test
 ```
+`JUnit` tests are located under `src/test/java`.
 
 ## Build
 The project is a Gradle project. To build, open up your Terminal and fire up the following commands:
