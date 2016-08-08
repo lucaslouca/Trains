@@ -12,7 +12,6 @@ import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertEquals;
 
 /**
  * Tests for {@code LLRailRoadServiceCommandFactory}.

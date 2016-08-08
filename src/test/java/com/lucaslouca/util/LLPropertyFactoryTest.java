@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Tests for {@code LLPropertyFactory}.
  */
+@SuppressWarnings("unchecked")
 public class LLPropertyFactoryTest {
     private static Locale defaultLocale;
 

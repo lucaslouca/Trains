@@ -1,8 +1,5 @@
 package com.lucaslouca.service;
 
-import com.lucaslouca.service.LLRailRoadService;
-import com.lucaslouca.service.LLRailRoadServiceException;
-import com.lucaslouca.service.LLRailRoadServiceImpl;
 import com.lucaslouca.util.LLTownMap;
 import com.lucaslouca.util.LLTownMapImpl;
 import org.junit.Before;
@@ -14,7 +11,7 @@ import java.io.FileNotFoundException;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Unit tests for the LLRailRoadService implementation
+ * Tests for {@code LLRailRoadService}.
  */
 public class LLRailRoadServiceTest {
     private LLRailRoadService service;

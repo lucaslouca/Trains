@@ -421,7 +421,7 @@ public class LLDirectedGraph<T> {
 
             if (stop.evaluate(path)) {
                 path.removeLastNode(weightForEdge(currentNode, neighbour));
-                break;
+                continue; // go to next neighbour
             } else {
                 total += dfs(neighbour, stop, filter, path);
             }

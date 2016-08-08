@@ -1,18 +1,15 @@
 package com.lucaslouca.util;
 
-import com.lucaslouca.util.LLTownMap;
-import com.lucaslouca.util.LLTownMapImpl;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ResourceBundle;
 
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by lucas on 06/08/16.
+ * Tests for {@code LLTownMap}.
  */
 public class LLTownMapTest {
     private LLTownMap map;
