@@ -175,10 +175,9 @@ String result = processor.runAll("/Users/lucas/commands.txt"); // execute all co
 ```
 
 #### Available commands
-* `distance;[TOWN 1];[TOWN 2]; ... ;[TOWN N]` - Compute distance of route. Example: `distance;A;B;C`
-
-* `count_routes_with_max_hops;[START TOWN];[DESTINATION TOWN];[MAX HOP COUNT]`.  Example: *count_routes_with_max_hops;C;C;3*.
-* `count_routes_with_hops;[START TOWN];[DESTINATION TOWN];[HOP COUNT]`.Example: *count_routes_with_hops;A;C;4*.
-* `count_routes_with_max_distance;[START TOWN];[DESTINATION TOWN];[MAX DISTANCE]`. Example: *count_routes_with_max_distance;C;C;29*.
-* `length_of_shortest_path;[START TOWN];[DESTINATION TOWN];`. Example: *length_of_shortest_path;A;C*.
-* `shortest_path;[START TOWN];[DESTINATION TOWN];`. Example: *shortest_path;B;B*.
+* `distance;[TOWN 1];[TOWN 2]; ... ;[TOWN N]` - Compute distance of route. Example: `distance;A;B;C`.
+* `count_routes_with_max_hops;[START TOWN];[DESTINATION TOWN];[MAX HOP COUNT]` - Count routes with maximum number of hops.  Example: `count_routes_with_max_hops;C;C;3`.
+* `count_routes_with_hops;[START TOWN];[DESTINATION TOWN];[HOP COUNT]` - Count routes with exact number of hops. Example: `count_routes_with_hops;A;C;4`.
+* `count_routes_with_max_distance;[START TOWN];[DESTINATION TOWN];[MAX DISTANCE]` - Count routes with maximum distance.  Example: `count_routes_with_max_distance;C;C;29`.
+* `length_of_shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute length of shortest path between node. Example: `length_of_shortest_path;A;C`.
+* `shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute shortest path between nodes. Example: `shortest_path;B;B`.
