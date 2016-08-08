@@ -178,6 +178,9 @@ or run all commands contained in a text file:
 String result = processor.runAll("/Users/lucas/commands.txt"); // execute all commands in commands.txt
 ```
 
+### `LLPropertyFactory`
+Provides `static` methods for global access to the application's properties.
+
 #### Available commands
 * `distance;[TOWN 1];[TOWN 2]; ... ;[TOWN N]` - Compute distance of route. Example: `distance;A;B;C`.
 * `count_routes_with_max_hops;[START TOWN];[DESTINATION TOWN];[MAX HOP COUNT]` - Count routes with maximum number of hops.  Example: `count_routes_with_max_hops;C;C;3`.
