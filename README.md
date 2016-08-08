@@ -146,3 +146,12 @@ Model representing a town.
 
 ### `LLRailRoadServiceImpl`
 `LLRailRoadServiceImpl` implements the `LLRailRoadService` interface. It makes use of `LLTownMap`. Although most of the  functionality in `LLRailRoadServiceImpl` is cascaded to `LLTownMap`, the idea of providing `LLRailRoadServiceImpl`, is to separate the functionality between a service system and a map. That is, `LLRailRoadServiceImpl` could be expanded to support further functionality such as `requestClosingHours()` or `nextTrainDepartureTime()` without the need to modify the `LLTownMap`.
+
+### `LLCommand`
+Interface defining a command that can be executed. A typical command would be calculating the distance of a route.
+
+### `LLCommandFactory`
+Interface that defines which functionality an `LLCommand` factory must provide.`LLCommandFactory` provides functionality for creating new commands that implement the `LLCommand` interface.
+
+### `LLRailRoadServiceCommandFactory`
+This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. `LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`.
