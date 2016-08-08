@@ -1,3 +1,5 @@
+Author: Lucas Louca (lucas@lucaslouca.com)
+
 **If you don't have a Markdown reader, please refer to README.html**
 
 # Trains
