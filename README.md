@@ -171,6 +171,13 @@ String result = processor.run("distance;A;D"); // compute distance between node 
 ```
 or run all commands contained in a text file:
 ```java
-String result = processor.runAll("/Users/lucas/commands.txt"); // execute all command in commands.txt
+String result = processor.runAll("/Users/lucas/commands.txt"); // execute all commands in commands.txt
 ```
 
+#### Available commands
+* `distance;A;B; ... ;Z`. Example: *distance;A;B;C*
+* `count_routes_with_max_hops;[START TOWN];[DESTINATION TOWN];[MAX HOP COUNT]`.  Example: *count_routes_with_max_hops;C;C;3*.
+* `count_routes_with_hops;[START TOWN];[DESTINATION TOWN];[HOP COUNT]`.Example: *count_routes_with_hops;A;C;4*.
+* `count_routes_with_max_distance;[START TOWN];[DESTINATION TOWN];[MAX DISTANCE]`. Example: *count_routes_with_max_distance;C;C;29*.
+* `length_of_shortest_path;[START TOWN];[DESTINATION TOWN];`. Example: *length_of_shortest_path;A;C*.
+* `shortest_path;[START TOWN];[DESTINATION TOWN];`. Example: *shortest_path;B;B*.
