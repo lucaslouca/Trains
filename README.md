@@ -126,3 +126,12 @@ Notes:
 
 ### JavaDoc
 `JavaDoc` can be found in the `JavaDoc` folder.
+
+## Important Classes
+### `Main`
+The `Main` class is the main entry point of the application. It contains a `main()` method whose signature looks like this
+```java
+public static void main(String args[])
+```
+which the runtime system calls when the program starts. 
+#### Arguments to the `main()` Method
