@@ -169,7 +169,7 @@ Classes inheriting from `LLAbstractRailRoadServiceCommand` are commands that imp
 ```java
 LLCommandProccesor processor = new LLCommandProccesor(commandFactory);
 ```
-The `LLCommandFactory` will then be used by `LLCommandProccesor` to create `LLCommand` objects for a given input. `LLCommandProccesor` can take a single command in the form of
+The `LLCommandFactory` will then be used by `LLCommandProccesor` to create `LLCommand` objects for a given input. `LLCommandProccesor` can take and execute a single command in the form of text:
 ```java
 String result = processor.run("distance;A;D"); // compute distance between node 'A' and 'B'
 ```
