@@ -154,7 +154,7 @@ Interface defining a command that can be executed by calling its `execute()` met
 Interface that defines which functionality an `LLCommand` factory must provide.`LLCommandFactory` provides functionality for creating new commands that implement the `LLCommand` interface.
 
 ### `LLRailRoadServiceCommandFactory`
-This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. The `LLRailRoadServiceCommandFactory` gets initialised with an  `LLRailRoadService`, which it sets a *receiver* in the `LLAbstractRailRoadServiceCommand` commands:
+This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. The `LLRailRoadServiceCommandFactory` gets initialised with an  `LLRailRoadService`, which it sets as *receiver* in `LLAbstractRailRoadServiceCommand` instances:
 ```java
 LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 ```
