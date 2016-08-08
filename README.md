@@ -73,6 +73,9 @@ $ gradle test
 ```
 `JUnit` tests are located under `/src/test/java`.
 
+## Properties
+Output messages are both availabe in English and German, depending on the system's default locale. The messages are available in the `trains.properties` and `trains_de.properties` file, respectively, and can be found under `/src/main/resources/com/lucaslouca/`.
+
 ## Build
 The project is a Gradle project. To build, open up your Terminal and fire up the following commands:
 ```shell
