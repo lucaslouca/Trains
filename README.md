@@ -135,7 +135,7 @@ public static void main(String args[])
 ```
 which the runtime system calls when the program starts. The `main()` method then calls all the other methods required to run the application. It takes two arguments. The first argument is the path to the file containing the *Town Graph*, while the second argument points to the file containing the *commands* we want our application to execute.
 
-### `LLDirectedGraph`
+### `LLDirectedGraph<T>`
 `LLDirectedGraph` represents a generic directed graph. It provides basic functionality for adding nodes and edges as well as methods for computing the shortest path (Dijkstra) and distance between nodes.
 
 ### `LLTownMap`
