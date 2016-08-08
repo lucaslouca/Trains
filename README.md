@@ -71,7 +71,7 @@ To run the existing JUnit tests using Gradle, execute the following commands
 $ cd path/to/Trains
 $ gradle test
 ```
-`JUnit` tests are located under `src/test/java`.
+`JUnit` tests are located under `/src/test/java`.
 
 ## Build
 The project is a Gradle project. To build, open up your Terminal and fire up the following commands:
@@ -182,3 +182,7 @@ String result = processor.runAll("/Users/lucas/commands.txt"); // execute all co
 * `count_routes_with_max_distance;[START TOWN];[DESTINATION TOWN];[MAX DISTANCE]` - Count routes with maximum distance.  Example: `count_routes_with_max_distance;C;C;29`.
 * `length_of_shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute length of shortest path between node. Example: `length_of_shortest_path;A;C`.
 * `shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute shortest path between nodes. Example: `shortest_path;B;B`.
+
+
+## Sample Data
+Sample data for a *graph* and *commands* can be found under `/src/test/resources/`.
