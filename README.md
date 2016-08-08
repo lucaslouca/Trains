@@ -178,9 +178,6 @@ or run all commands contained in a text file:
 String result = processor.runAll("/Users/lucas/commands.txt"); // execute all commands in commands.txt
 ```
 
-### `LLPropertyFactory`
-Provides `static` methods for global access to the application's properties.
-
 #### Available commands
 * `distance;[TOWN 1];[TOWN 2]; ... ;[TOWN N]` - Compute distance of route. Example: `distance;A;B;C`.
 * `count_routes_with_max_hops;[START TOWN];[DESTINATION TOWN];[MAX HOP COUNT]` - Count routes with maximum number of hops.  Example: `count_routes_with_max_hops;C;C;3`.
@@ -189,6 +186,8 @@ Provides `static` methods for global access to the application's properties.
 * `length_of_shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute length of shortest path between node. Example: `length_of_shortest_path;A;C`.
 * `shortest_path;[START TOWN];[DESTINATION TOWN];` - Compute shortest path between nodes. Example: `shortest_path;B;B`.
 
+### `LLPropertyFactory`
+Provides `static` methods for global access to the application's properties.
 
 ## Sample Data
 Sample data for a *graph* and *commands* can be found under `/src/test/resources/`.
