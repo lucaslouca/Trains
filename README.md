@@ -195,11 +195,11 @@ count_routes_with_hops;A;C;4
 ```
 count_routes_with_max_distance;C;C;29
 ```
-* **length_of_shortest_path;[START TOWN];[DESTINATION TOWN];** - Compute length of shortest path between node. Example:
+* **length_of_shortest_path;[START TOWN];[DESTINATION TOWN]** - Compute length of shortest path between node. Example:
 ```
 length_of_shortest_path;A;C
 ```
-* **shortest_path;[START TOWN];[DESTINATION TOWN];** - Compute shortest path between nodes. Example: 
+* **shortest_path;[START TOWN];[DESTINATION TOWN]** - Compute shortest path between nodes. Example: 
 ```
 shortest_path;B;B
 ```
