@@ -127,10 +127,16 @@ Notes:
 ### JavaDoc
 `JavaDoc` can be found in the `JavaDoc` folder.
 
-## Important Classes
-### `Main`
+## Important Classes & Interfaces
+### `Main` Class
 The `Main` class is the main entry point of the application. It contains a `main()` method whose signature looks like this
 ```java
 public static void main(String args[])
 ```
 which the runtime system calls when the program starts. The `main()` method then calls all the other methods required to run the application. It takes two arguments. The first argument is the path to the file containing the *Town Graph*, while the second argument points to the file containing the *commands* we want our application to execute.
+
+### `LLDirectedGraph` Class
+`LLDirectedGraph` represents a generic directed graph. It provides basic functionality for adding nodes and edges as well as methods for computing the shortest path and distance between nodes.
+
+### `LLTownMap` Interface
+The `LLTownMap` interface represents a map that stores towns using a `LLDirectedGraph` underneath. It wraps the functionality of `LLDirectedGraph` and provides methods for accessing it using the town names.
