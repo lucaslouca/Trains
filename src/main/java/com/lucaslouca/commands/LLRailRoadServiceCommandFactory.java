@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 /**
- * This class implements the {@code LLCommandFactory} {@code Interface}. It provide methods for creating concrete command implementations of
+ * This class implements the {@code LLCommandFactory} {@code Interface}. It provides methods for creating concrete command implementations of
  * the {@code abstract} type {@code LLAbstractRailRoadServiceCommand}. {@code LLAbstractRailRoadServiceCommand} are commands
  * that implement the {@code LLCommand} {@code Interface} but are specifically implemented for the {@code LLRailRoadService}.
  */

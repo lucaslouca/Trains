@@ -34,8 +34,7 @@ public class LLCommandProccesorTest {
             LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 
             // Create an LLCommandProccesor that uses commandFactory
-            File commandsFile = new File(classLoader.getResource("commands.txt").getFile());
-            processor = new LLCommandProccesor(commandsFile.getAbsolutePath(), commandFactory);
+            processor = new LLCommandProccesor(commandFactory);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -43,8 +42,15 @@ public class LLCommandProccesorTest {
 
     @Test
     public void testRunAll() {
-        String ans = processor.runAll();
-        assertEquals("9\n5\n13\n22\n2\n3\n9\n9\n7\n7", ans);
+        ClassLoader classLoader = getClass().getClassLoader();
+        File commandsFile = new File(classLoader.getResource("commands.txt").getFile());
+        String ans = null;
+        try {
+            ans = processor.runAll(commandsFile.getAbsolutePath());
+            assertEquals("9\n5\n13\n22\n2\n3\n9\n9\n7\n7", ans);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

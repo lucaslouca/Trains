@@ -30,9 +30,9 @@ public class Main {
                 LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 
                 // Create an LLCommandProccesor that uses commandFactory
-                LLCommandProccesor processor = new LLCommandProccesor(commandsFilePath, commandFactory);
+                LLCommandProccesor processor = new LLCommandProccesor(commandFactory);
 
-                System.out.println(processor.runAll());
+                System.out.println(processor.runAll(commandsFilePath));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
