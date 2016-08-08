@@ -145,4 +145,4 @@ The `LLTownMap` interface represents a map that stores towns using a `LLDirected
 Model representing a town.
 
 ### `LLRailRoadServiceImpl`
-`LLRailRoadServiceImpl` implements the `LLRailRoadService` interface. It makes use of `LLTownMap`. Although most of the  functionality in `LLRailRoadServiceImpl` is cascaded to `LLTownMap`, the idea of providing `LLRailRoadServiceImpl` is to separate the functionality between a service system and a map. That is, `LLRailRoadServiceImpl` could be expanded to support further functionality such as `requestClosingHours()` or `nextTrainDepartureTime()` without the need to modify the `LLTownMap`.
+`LLRailRoadServiceImpl` implements the `LLRailRoadService` interface. It makes use of `LLTownMap`. Although most of the  functionality in `LLRailRoadServiceImpl` is cascaded to `LLTownMap`, the idea of providing `LLRailRoadServiceImpl`, is to separate the functionality between a service system and a map. That is, `LLRailRoadServiceImpl` could be expanded to support further functionality such as `requestClosingHours()` or `nextTrainDepartureTime()` without the need to modify the `LLTownMap`.
