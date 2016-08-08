@@ -1,6 +1,6 @@
-Author: Lucas Louca (lucas@lucaslouca.com)
-
 **If you don't have a Markdown reader, please refer to README.html**
+
+Author: Lucas Louca (lucas@lucaslouca.com)
 
 # Trains
 Commuter railroad service for the towns in Kiwiland. 
