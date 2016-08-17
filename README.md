@@ -1,6 +1,5 @@
-**If you don't have a Markdown reader, please refer to README.html**
+**This coding-challenge was part of the interview process with ThoughtWorks. Time frame was about 3 days. Unfortunately this solution didn't suffice and no feedback/reason was given.**
 
-Author: Lucas Louca (lucas@lucaslouca.com)
 
 # Trains
 Commuter railroad service for the towns in Kiwiland. 
