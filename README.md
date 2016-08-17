@@ -1,4 +1,4 @@
-**This coding-challenge was part of the interview process with ThoughtWorks for a software developer role. Time frame was about 3 days. Unfortunately this solution didn't suffice and no feedback/reason was given.**
+**This coding-challenge was part of the interview process with ThoughtWorks for a software developer role. Time frame was about 3 days. This solution, along with README, JavaDoc and source code, didn't suffice. Feedback is not available.**
 
 
 # Trains
