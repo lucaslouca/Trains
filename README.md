@@ -1,4 +1,4 @@
-*This coding-challenge was part of the interview process with ThoughtWorks for a software developer role. Time frame was about 3 days. *
+**This coding-challenge was part of the interview process with ThoughtWorks for a software developer role. Time frame was about 3 days.**
 
 
 # Trains
