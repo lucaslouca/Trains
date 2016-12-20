@@ -1,10 +1,12 @@
 **This coding-challenge was part of the interview process with ThoughtWorks for a software developer role. Time frame was about 3 days.**
 
 
-# Trains
+**Trains**
+
 Commuter railroad service for the towns in Kiwiland. 
 
-## Problem Statement
+**Problem Statement**
+
 The local commuter railroad services a number of towns in Kiwiland.  Because of monetary concerns, all of the tracks are 'one-way.'  That is, a route from Kaitaia to Invercargill does not imply the existence of a route from Invercargill to Kaitaia.  In fact, even if both of these routes do happen to exist, they are distinct and are not necessarily the same distance!
 
 The purpose of this problem is to help the railroad provide its customers with information about the routes.  In particular, you will compute the distance along a certain route, the number of different routes between two towns, and the shortest route between two towns.
@@ -19,7 +21,8 @@ The purpose of this problem is to help the railroad provide its customers with i
 *  Compute the number of different routes between two towns.
 *  Compute the shortest route between two towns.
 
-## Example Input & Output
+**Example Input & Output**
+
 Below follows an example with input data, actions performed and expected output result.
 
 **Sample Input:**
@@ -63,12 +66,15 @@ Output #9: 9
 Output #10: 7
 ```
 
-## Implementation
-## Requirenments
+**Implementation**
+
+**Requirenments**
+
 * JDK 1.8
 * Gradle
 
-## Run JUnit Tests
+**Run JUnit Tests**
+
 To run the existing JUnit tests using Gradle, execute the following commands
 ```shell
 $ cd path/to/Trains
@@ -76,10 +82,12 @@ $ gradle test
 ```
 `JUnit` tests are located under `/src/test/java`.
 
-## Properties
+**Properties**
+
 Output messages are both availabe in English and German, depending on the system's default locale. The messages are available in the `trains.properties` and `trains_de.properties` file, respectively, and can be found under `/src/main/resources/com/lucaslouca/`.
 
-## Build
+**Build**
+
 The project is a Gradle project. To build, open up your Terminal and fire up the following commands:
 ```shell
 $ cd path/to/Trains
@@ -87,7 +95,8 @@ $ gradle build
 ```
 You should see a 'BUILD SUCCESSFUL' message when everything went well. When the build completed succesfully, the program will be named `Trains.jar` and can be found under `/build/libs/` in the `Trains` project directory.
 
-## Usage
+**Usage**
+
 Run the program as follows:
 ```shell
 $ java -jar Trains.jar path/to/graph.txt path/to/commands.txt
@@ -108,8 +117,10 @@ MacBook-Pro:Trains lucas$ java -jar build/libs/Trains.jar ../../graph.txt ../../
 7
 ```
 
-## Import Project with an IDE
-### Import Project with IntelliJ IDEA
+**Import Project with an IDE**
+
+**Import Project with IntelliJ IDEA**
+
 To import the project using Eclipse, do the following:
 * ` File -> New -> Project from Existing Sources` from the main menu.
 * Browse to the project directory and click `OK`.
@@ -117,7 +128,8 @@ To import the project using Eclipse, do the following:
 * Specify `Gradle home` and make sure the `Gradle JVM` is set to version `1.8.x`.
 * Click `Finish`.
 
-### Import Project with Eclipse
+**Import Project with Eclipse**
+
 To import the project using Eclipse, do the following:
 * `File -> Import... -> Gradle -> Gradle Project` from the main menu.
 * Click `Next`.
@@ -131,30 +143,38 @@ Notes:
 * You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
 * Make sure to replace ``apply plugin: 'idea'`` with ``apply plugin: 'eclipse'`` in the `build.gradle` file located in project's root directory.
 
-### JavaDoc
+**JavaDoc**
+
 `JavaDoc` can be found in the `JavaDoc` folder.
 
-## Important Classes & Interfaces
-### `Main`
+**Important Classes & Interfaces**
+
+**`Main`**
+
 The `Main` class is the main entry point of the application. It contains a `main()` method whose signature looks like this
 ```java
 public static void main(String args[])
 ```
 which the runtime system calls when the program starts. The `main()` method then calls all the other methods required to run the application. It takes two arguments. The first argument is the path to the file containing the *Town Graph*, while the second argument points to the file containing the *commands* we want our application to execute.
 
-### `LLDirectedGraph<T>`
+**`LLDirectedGraph<T>`**
+
 `LLDirectedGraph` represents a generic directed graph. It provides basic functionality for adding nodes and edges as well as methods for computing the shortest path (Dijkstra) and distance between nodes.
 
-### `LLTownMap`
+**`LLTownMap`**
+
 The `LLTownMap` interface represents a map that stores towns using a `LLDirectedGraph` underneath. It wraps the functionality of `LLDirectedGraph` and provides methods for accessing it using the town names.
 
-### `LLTown`
+**`LLTown`**
+
 Model representing a town.
 
-### `LLRailRoadServiceImpl`
+**`LLRailRoadServiceImpl`**
+
 `LLRailRoadServiceImpl` implements the `LLRailRoadService` interface. It makes use of `LLTownMap`. Although most of the  functionality in `LLRailRoadServiceImpl` is cascaded to `LLTownMap`, the idea of providing `LLRailRoadServiceImpl`, is to separate the functionality between a service system and a map. That is, `LLRailRoadServiceImpl` could be expanded to support further functionality such as `requestClosingHours()` or `nextTrainDepartureTime()` without the need to modify the `LLTownMap`.
 
-### `LLCommand`
+**`LLCommand`**
+
 Interface defining a command that can be executed by calling its `execute()` method. A typical command would be calculating the distance of a route.
 
 ### `LLCommandFactory`
@@ -167,7 +187,8 @@ LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
 ```
 Classes inheriting from `LLAbstractRailRoadServiceCommand` are commands that implement the `LLCommand` interface but are specifically implemented for the `LLRailRoadService`. An example would be the `LLDistanceCommand`. 
 
-### `LLCommandProccesor`
+**`LLCommandProccesor`**
+
 `LLCommandProccesor` executes `LLCommand` commands. The `LLCommandProccesor` gets initialised with an `LLCommandFactory`.
 ```java
 LLCommandProccesor processor = new LLCommandProccesor(commandFactory);
@@ -181,7 +202,8 @@ or run all commands contained in a text file:
 String result = processor.runAll("/Users/lucas/commands.txt"); // execute all commands in commands.txt
 ```
 
-#### Available commands
+**Available commands**
+
 * **distance;[TOWN 1];[TOWN 2]; ... ;[TOWN N]** - Compute distance of route. Example: 
 ```
 distance;A;B;C
@@ -207,8 +229,10 @@ length_of_shortest_path;A;C
 shortest_path;B;B
 ```
 
-### `LLPropertyFactory`
+**`LLPropertyFactory`**
+
 Provides `static` methods for global access to the application's properties.
 
-## Sample Data
+**Sample Data**
+
 Sample data for a *graph* and *commands* can be found under `/src/test/resources/`.
