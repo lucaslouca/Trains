@@ -17,9 +17,9 @@ The purpose of this problem is to help the railroad provide its customers with i
 > The towns are named using the first few letters of the alphabet from `A` to `E`.  A route between two towns (`A` to `B`) with a distance of `5` is represented as `AB5`. A directed graph is represented by a list of routes, with each route as a separate line.
 
 **Available Actions**
-*  Compute the distance along a certain route. If no such route exists, output 'NO SUCH ROUTE'. Otherwise, follow the route as given; do not make any extra stops!
-*  Compute the number of different routes between two towns.
-*  Compute the shortest route between two towns.
+-  Compute the distance along a certain route. If no such route exists, output 'NO SUCH ROUTE'. Otherwise, follow the route as given; do not make any extra stops!
+- Compute the number of different routes between two towns.
+-  Compute the shortest route between two towns.
 
 **Example Input & Output**
 
@@ -70,8 +70,8 @@ Output #10: 7
 
 **Requirenments**
 
-* JDK 1.8
-* Gradle
+- JDK 1.8
+- Gradle
 
 **Run JUnit Tests**
 
@@ -122,26 +122,26 @@ MacBook-Pro:Trains lucas$ java -jar build/libs/Trains.jar ../../graph.txt ../../
 **Import Project with IntelliJ IDEA**
 
 To import the project using Eclipse, do the following:
-* ` File -> New -> Project from Existing Sources` from the main menu.
-* Browse to the project directory and click `OK`.
-* Select `Gradle` as build tool and click `Next`.
-* Specify `Gradle home` and make sure the `Gradle JVM` is set to version `1.8.x`.
-* Click `Finish`.
+- ` File -> New -> Project from Existing Sources` from the main menu.
+- Browse to the project directory and click `OK`.
+- Select `Gradle` as build tool and click `Next`.
+- Specify `Gradle home` and make sure the `Gradle JVM` is set to version `1.8.x`.
+- Click `Finish`.
 
 **Import Project with Eclipse**
 
 To import the project using Eclipse, do the following:
-* `File -> Import... -> Gradle -> Gradle Project` from the main menu.
-* Click `Next`.
-* Click `Browse...` for the `Root Directory`.
-* Select and open the `Trains` project.
-* Click `Build Model`.
-* Select all projects.
-* Click `Finish`.
+- `File -> Import... -> Gradle -> Gradle Project` from the main menu.
+- Click `Next`.
+- Click `Browse...` for the `Root Directory`.
+- Select and open the `Trains` project.
+- Click `Build Model`.
+- Select all projects.
+- Click `Finish`.
 
 Notes:
-* You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
-* Make sure to replace ``apply plugin: 'idea'`` with ``apply plugin: 'eclipse'`` in the `build.gradle` file located in project's root directory.
+- You may need <a href="http://marketplace.eclipse.org/content/gradle-integration-eclipse-44" target="_blank">Gradle Integration for Eclipse</a>
+- Make sure to replace ``apply plugin: 'idea'`` with ``apply plugin: 'eclipse'`` in the `build.gradle` file located in project's root directory.
 
 **JavaDoc**
 
