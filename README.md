@@ -235,4 +235,4 @@ Provides `static` methods for global access to the application's properties.
 
 **Sample Data**
 
-Sample data for a *graph* and *commands* can be found under [/src/test/resources/](https://github.com/lucaslouca/Trains/tree/master/src/test/resources) at GitHub.
+Sample data for a *graph* and *commands* can be found [here](https://github.com/lucaslouca/Trains/tree/master/src/test/resources).
