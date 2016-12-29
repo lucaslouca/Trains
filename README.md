@@ -145,7 +145,7 @@ Notes:
 
 **JavaDoc**
 
-`JavaDoc` can be found in the `JavaDoc` folder.
+`JavaDoc` can be found in the [here](https://github.com/lucaslouca/Trains/tree/master/JavaDoc).
 
 **Important Classes & Interfaces**
 
@@ -177,10 +177,10 @@ Model representing a town.
 
 Interface defining a command that can be executed by calling its `execute()` method. A typical command would be calculating the distance of a route.
 
-### `LLCommandFactory`
+**`LLCommandFactory`**
 Interface that defines which functionality an `LLCommand` factory must provide.`LLCommandFactory` provides functionality for creating new commands that implement the `LLCommand` interface.
 
-### `LLRailRoadServiceCommandFactory`
+**`LLRailRoadServiceCommandFactory`**
 This class implements the `LLCommandFactory` interface. It provides methods for creating concrete command implementations of the abstract type `LLAbstractRailRoadServiceCommand`. The `LLRailRoadServiceCommandFactory` gets initialised with an  `LLRailRoadService`, which it sets as *receiver* in `LLAbstractRailRoadServiceCommand` instances:
 ```java
 LLCommandFactory commandFactory = new LLRailRoadServiceCommandFactory(service);
@@ -235,4 +235,4 @@ Provides `static` methods for global access to the application's properties.
 
 **Sample Data**
 
-Sample data for a *graph* and *commands* can be found under `/src/test/resources/`.
+Sample data for a *graph* and *commands* can be found under [/src/test/resources/(https://github.com/lucaslouca/Trains/tree/master/src/test/resources) at GitHub.
