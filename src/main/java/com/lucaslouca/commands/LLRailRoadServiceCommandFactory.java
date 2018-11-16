@@ -156,7 +156,7 @@ public class LLRailRoadServiceCommandFactory implements LLCommandFactory {
     private LLCountRoutesWithMaxHopsCommand createCountRoutesWithMaxHopsCommand(String input) {
         String[] parts = input.split(";");
 
-        if (parts.length < 4 || parts.length > 4) {
+        if (parts.length != 4) {
             throw new IllegalArgumentException(LLPropertyFactory.propertyWithArgs("exception.service_command_factory.illegal_argument.parse_input_format", input));
         } else {
             LLCountRoutesWithMaxHopsCommand command = new LLCountRoutesWithMaxHopsCommand(service);
@@ -184,7 +184,7 @@ public class LLRailRoadServiceCommandFactory implements LLCommandFactory {
     private LLCountRoutesWithHopsCommand createCountRoutesWithHopsCommand(String input) {
         String[] parts = input.split(";");
 
-        if (parts.length < 4 || parts.length > 4) {
+        if (parts.length != 4) {
             throw new IllegalArgumentException(LLPropertyFactory.propertyWithArgs("exception.service_command_factory.illegal_argument.parse_input_format", input));
         } else {
             LLCountRoutesWithHopsCommand command = new LLCountRoutesWithHopsCommand(service);
@@ -212,7 +212,7 @@ public class LLRailRoadServiceCommandFactory implements LLCommandFactory {
     private LLCountRoutesWithMaxDistanceCommand createCountRoutesWithMaxDistanceCommand(String input) {
         String[] parts = input.split(";");
 
-        if (parts.length < 4 || parts.length > 4) {
+        if (parts.length != 4) {
             throw new IllegalArgumentException(LLPropertyFactory.propertyWithArgs("exception.service_command_factory.illegal_argument.parse_input_format", input));
         } else {
             LLCountRoutesWithMaxDistanceCommand command = new LLCountRoutesWithMaxDistanceCommand(service);
