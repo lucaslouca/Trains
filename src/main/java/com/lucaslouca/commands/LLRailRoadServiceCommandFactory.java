@@ -112,7 +112,7 @@ public class LLRailRoadServiceCommandFactory implements LLCommandFactory {
     private LLShortestPathLengthCommand createShortestPathLengthCommand(String input) {
         String[] parts = input.split(";");
 
-        if (parts.length < 3 || parts.length > 3) {
+        if (parts.length != 3) {
             throw new IllegalArgumentException(LLPropertyFactory.propertyWithArgs("exception.service_command_factory.illegal_argument.parse_input_format", input));
         } else {
             LLShortestPathLengthCommand command = new LLShortestPathLengthCommand(service);
